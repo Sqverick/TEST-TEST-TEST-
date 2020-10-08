@@ -1,3 +1,22 @@
+.border__1 {
+    border: solid;
+    
+}
+
 h1 {
     color: red;
 }
+.border__2 {
+       border: 4mm ridge rgba(170, 50, 220, .6);;
+}
+.border__3 {
+    border: thick double;
+    border-color: brown;
+}
+.border__4 {
+    border: dotted;
+    border-color: darkblue;
+}
+.border__5 {
+    border: solid greenyellow;
+    }
