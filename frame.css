@@ -15,6 +15,13 @@ h1 {
     margin: 20px;
     padding: 10px;
 }
+
+section {
+    border: dotted;
+    border-color: darkblue;
+    margin: 20px;
+    padding: 10px;
+}
 .border__2 {
        border: 4mm ridge rgba(170, 50, 220, .6);
        margin: 20px;
@@ -26,12 +33,7 @@ h1 {
     margin: 20px;
     padding: 10px;
 }
-.border__4 {
-    border: dotted;
-    border-color: darkblue;
-    margin: 20px;
-    padding: 10px;
-}
+
 .border__5 {
     border: solid greenyellow;
     margin: 20px;
