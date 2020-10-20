@@ -19,8 +19,10 @@ h1 {
 section {
     border: dotted;
     border-color: darkblue;
+    border-radius: 20px/30px;
     margin: 20px;
     padding: 10px;
+    line-height: 20px;
 }
 .border__2 {
        border: 4mm ridge rgba(170, 50, 220, .6);
