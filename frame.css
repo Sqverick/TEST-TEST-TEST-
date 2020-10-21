@@ -1,4 +1,5 @@
-body {background: 
+body {
+    background: 
     url(https://webfon.top/wp-content/uploads/2017/10/tools.png) 
     left top repeat;}
 /*у бэкграунда есть еще много вариаций(image, color и т.д., 
@@ -36,6 +37,8 @@ section {
     padding: 10px;
 }
 
+
+
 .border__5 {
     border: solid greenyellow;
     margin: 20px;
@@ -46,4 +49,9 @@ section {
     }
     .line {
         color: red;
+    }
+
+    figure {
+        text-align: center; /*можно указать, 
+        как выравнивается содержимое в блоке*/
     }
