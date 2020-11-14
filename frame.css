@@ -55,3 +55,10 @@ section {
         text-align: center; /*можно указать, 
         как выравнивается содержимое в блоке*/
     }
+    table, td {
+        border-collapse: collapse;
+        border: solid grey;
+        padding: 5px;
+        background: white;
+    }
+    

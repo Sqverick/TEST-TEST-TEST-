@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="keywords" content="важные, ключевые, слова">
 <meta name="description" content="краткое описание">
+<meta name="viewport" content="width=device-width, initial-scale=1">
  <!--С помощью мета 
     можно сообщать браузеру, поисковому 
     роботу или другому устройству 
@@ -245,7 +246,236 @@ X<sup>3</sup>+X<sup>2</sup>=1
                     <img src="cat.jpg" width="150px" height="200px" alt="Зимний котик">
                     <!--ссылка-картинка-->
                 </a>
+                <!--ВИДЕО-->
+                <video src="#" controls preload="metadata" width="400" height="225" autoplay>
+                      <source src="video.mp4" type="video/mp4">
+  <source src="video.ogv" type="video/ogg">
+  <source src="video.webm" type="video/webm">
+                </video>
+                <audio controls preload="metadata">
+                      <source src="sound.mp3" type="audio/mpeg">
+  <source src="sound.oga" type="audio/ogg">
+                </audio>
             </section>
+            <div>
+                <h2>INPUT</h2>
+                <table>
+                    <tr>
+                        <td>button</td>
+                        <td>Кнопка</td>
+                        <td>
+                            <form action="#" method="get">
+                                <input type="button"name="button" value="Кнопка">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>checkbox</td>
+                        <td>Флажки. Позволяют выбрать более одного варианта из предложенных.</td>
+                        <td>
+                            <form action="#">
+                                <input type="checkbox" name="checkbox" id="checkbox" checked>раз
+                                <input type="checkbox" name="checkbox1" id="checkbox1" >два
+                                <input type="checkbox" name="checkbox2" id="checkbox2" checked>три 
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>file</td>
+                        <td>Поле для ввода имени файла, который пересылается на сервер.</td>
+                        <td>
+                            <form action="#" method="post" enctype="multipart/form-data">
+                                <input type="file" name="file">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Скрытое поле. Оно никак не отображается на веб-странице.</td>
+                        <td>
+                            <form action="#">
+                                <input type="hidden" name="hidden">
+                                </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>image</td>
+                        <td>Поле с изображением. При нажатии на рисунок данные формы отправляются на сервер.</td>
+                        <td>
+                           <form action="#">
+                               <input type="image" name="image" src="imgbtn.png" width="80px" height="30px" alt="Кнопка">
+                           </form> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td>Обычное текстовое поле, но отличается от него тем, 
+                            что все символы показываются звездочками. 
+                            Предназначено для того, чтобы никто не подглядел вводимый пароль.</td>
+                        <td>
+                            <form action="#">
+                                <input type="password" name="password" id="password" value="password">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>radio</td>
+                        <td>	Переключатели. 
+                            Используются, когда следует выбрать один вариант из нескольких предложенных.</td>
+                        <td>
+                            <form action="#">
+                                <input type="radio" name="radio" value="beer" checked>Beer 
+                                <input type="radio" name="radio" value="water">Water
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>reset</td>
+                        <td>Кнопка для возвращения данных формы в первоначальное значение.</td>
+                        <td>
+                            <form action="#">
+                                <input type="reset" name="reset" value="Сбросить">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>submit</td>
+                        <td>Кнопка для отправки данных формы на сервер.</td>
+                        <td>
+                            <form action="#">
+                                <input type="submit" name="submit" value="Send">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>text</td>
+                        <td>Текстовое поле. Предназначено для ввода символов с помощью клавиатуры.</td>
+                        <td>
+                            <form action="#">
+                                <label>
+                                <input type="text" name="text">
+                                </label>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>color</td>
+                        <td>Виджет для выбора цвета.</td>
+                        <td>
+                            <form action="#"></form>
+                            <input type="color" name="color">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>Поле для выбора календарной даты.</td>
+                        <td>
+                            <form action="#"></form>
+                            <input type="date" name="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>datetime</td>
+                        <td>Указание даты и времени.</td>
+                        <td>
+                            <form action="#">
+                                <input type="datetime" name="datetime">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>datetime-local</td>
+                        <td>Указание местной даты и времени.</td>
+                        <td>
+                            <form action="#">
+                                <input type="datetime-local" name="datetime-local">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>time</td>
+                        <td>Для времени.</td>
+                        <td>
+                            <form action="#">
+                                <input type="time" name="time">
+                            </form>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>month</td>
+                        <td>Выбор месяца.</td>
+                        <td>
+                            <form action="#">
+                                <input type="month">
+                            </form>
+                        </td>
+                    </tr>
+                    </tr>
+                     <tr>
+                        <td>week</td>
+                        <td>Выбор недели.</td>
+                        <td>
+                            <form action="#">
+                                <input type="week">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>email</td>
+                        <td>Для адресов электронной почты.</td>
+                        <td>
+                            <form action="#">
+                                <input type="email" name="email" required>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>number</td>
+                        <td>Ввод чисел.</td>
+                        <td>
+                            <form action="#">
+                                <input type="number" name="number" min="0" max="100" step="5">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>range</td>
+                        <td>Ползунок для выбора чисел в указанном диапазоне.</td>
+                        <td>
+                            <form action="#" oninput="daysoutput.value=dayscount.value">
+                                0<input type="range" name="range" min="0" max="100" step="5">100
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>search</td>
+                        <td>Поле для поиска.</td>
+                        <td>
+                            <form action="#">
+                                <input type="search" name="search" autofocus>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>tel</td>
+                        <td>Для телефонных номеров.</td>
+                        <td>
+                            <form action="#">
+                                <input type="tel">
+                            </form>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>url</td>
+                        <td>Для веб-адресов.</td>
+                        <td>
+                            <form action="#">
+                                <input type="url">
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 </main>
 <footer class="border__5">
     Я подвал сайта, тут можно указать всякую контактную инфу, могу быть такой не один)))
